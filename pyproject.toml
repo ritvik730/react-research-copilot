@@ -1,0 +1,33 @@
+[project]
+name = "react-research-copilot"
+version = "0.1.0"
+description = "ReAct research copilot over a local document corpus (LangChain + LangGraph + Pinecone + Ollama)."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "langchain>=0.3.7",
+    "langchain-core>=0.3.15",
+    "langchain-community>=0.3.5",
+    "langchain-ollama>=0.2.0",
+    "langchain-pinecone>=0.2.0",
+    "langchain-text-splitters>=0.3.0",
+    "langgraph>=0.2.45",
+    "pinecone>=5.3.1",
+    "pypdf>=5.0.0",
+    "python-dotenv>=1.0.1",
+    "pandas>=2.2.3",
+    "tqdm>=4.66.5",
+    "tabulate>=0.9.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "jupyter>=1.1.0",
+    "ipykernel>=6.29.0",
+]
+
+[tool.uv]
+# This project is a collection of scripts, not an installable library.
+# Tells uv not to try to build/install the project itself.
+package = false
+

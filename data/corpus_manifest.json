@@ -1,0 +1,49 @@
+{
+  "dataset_name": "ReAct Research Copilot \u2013 Sample Corpus",
+  "notes": "Synthetic, test-only corpus for local retrieval/RAG experiments.",
+  "documents": {
+    "markdown": [
+      "01_ai_evals.md",
+      "01_climate.md",
+      "01_finance_variance.md",
+      "01_health_data.md",
+      "01_ops_incidents.md",
+      "01_product_metrics.md",
+      "01_prompt_injection.md",
+      "01_rag.md",
+      "01_vector_search.md",
+      "01_webapp_security.md",
+      "02_vector_search.md",
+      "03_product_metrics.md",
+      "04_ai_evals.md",
+      "05_prompt_injection.md",
+      "06_climate.md",
+      "07_prompt_injection.md",
+      "08_finance_variance.md",
+      "09_health_data.md",
+      "10_ai_evals.md",
+      "11_climate.md",
+      "12_rag.md",
+      "13_ai_evals.md",
+      "14_prompt_injection.md",
+      "15_product_metrics.md",
+      "16_product_metrics.md",
+      "17_prompt_injection.md",
+      "18_rag.md",
+      "19_prompt_injection.md",
+      "20_climate.md",
+      "21_product_metrics.md",
+      "22_ai_evals.md",
+      "23_health_data.md",
+      "24_prompt_injection.md",
+      "25_rag.md"
+    ],
+    "pdf": [
+      "guide_chunking.pdf",
+      "guide_evidence_citations.pdf",
+      "guide_vector_index.pdf",
+      "policy_eval_playbook.pdf",
+      "policy_safety_notes.pdf"
+    ]
+  }
+}

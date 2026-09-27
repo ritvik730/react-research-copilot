@@ -1,0 +1,152 @@
+question_id,question,mode,steps_used,retrieved_files,answer,citations,grounded_precision,notes
+Q01,What does 'faithfulness' mean in LLM evaluation?,baseline,0,,"In LLM (Large Language Model) evaluation, ""faithfulness"" refers to the extent to which a model's generated output accurately represents the original input or prompt. In other words, it measures how closely the model's response aligns with the intended meaning and context of the input.
+
+Faithfulness is often evaluated using metrics such as:
+
+* Perplexity: measures how well the model predicts the next token in the sequence
+* Fluency: measures how coherent and natural-sounding the generated text is
+* Accuracy: measures how accurately the model understands the original intent or meaning
+
+Higher faithfulness scores indicate that the model has better understood the input and generated a more accurate response.",,0.0,acc=0.0
+Q01,What does 'faithfulness' mean in LLM evaluation?,react,4,01_ai_evals.md,"Faithfulness means the answer is supported by retrieved evidence [01_ai_evals.md]. According to the document, faithfulness refers to the degree to which the generated text is grounded in reality and accurately reflects the input or context.",01_ai_evals.md,1.0,acc=1.0
+Q02,Name two defenses against prompt injection.,baseline,0,,"Two defenses against prompt injection are:
+
+1. **Input Validation**: This involves checking the input for suspicious patterns or keywords that could be used for prompt injection.
+2. **Model Distillation**: This defense involves training a smaller, more robust model on top of a larger, more vulnerable model, which can help prevent attacks by making it harder for attackers to inject malicious prompts.",,0.0,acc=0.0
+Q02,Name two defenses against prompt injection.,react,4,01_prompt_injection.md,"Two defenses against prompt injection are:
+
+1. Instruction hierarchy: This defense involves establishing a clear hierarchy of instructions to prevent prompt injection attempts from overriding system instructions.
+2. Strict tool schemas: This defense involves using strict schema validation for actions to prevent prompt injection attempts from being executed.
+
+Faithfulness means the answer is supported by retrieved evidence [policy_safety_notes.pdf:1].",policy_safety_notes.pdf:1,1.0,acc=0.0
+Q03,Why do agent systems use a max-steps limit?,baseline,0,,"I'm not aware of the specific reason why all agent systems use a max-steps limit. However, I can provide some general information.
+
+In many reinforcement learning and planning algorithms, a max-steps limit is used to prevent an agent from taking too many steps in a single episode or environment. This can help prevent over-exploration, reduce computational complexity, and improve the stability of the algorithm.
+
+Some possible reasons for using a max-steps limit include:
+
+* Preventing the agent from getting stuck in an infinite loop
+* Reducing the number of states and actions that need to be explored
+* Improving the efficiency of the algorithm by limiting the number of steps taken
+
+However, I couldn't find any specific information on why all agent systems use a max-steps limit. The use of this limit may depend on the specific application, algorithm, or implementation.",,0.0,acc=1.0
+Q03,Why do agent systems use a max-steps limit?,react,3,policy_eval_playbook.pdf,"A max-steps limit is used in agent systems to prevent infinite loops in agent execution, ensuring the system remains stable and efficient. Faithfulness means the answer is supported by retrieved evidence [policy_eval_playbook.pdf:1].",policy_eval_playbook.pdf:1,1.0,acc=1.0
+Q04,What is a typical chunk size range recommended for narrative text?,baseline,0,,"A common recommendation for chunk sizes in narrative text is between 100-150 words (also known as ""chunks"" or ""sentences""). This length allows for a good balance between providing enough context and not overwhelming the reader. However, I'm unsure if there's a universally agreed-upon range, and it may vary depending on the specific genre, style, and audience.",,0.0,acc=1.0
+Q04,What is a typical chunk size range recommended for narrative text?,react,4,guide_chunking.pdf,"Faithfulness means the answer is supported by retrieved evidence [guide_chunking.pdf:1]. Typical chunk sizes for narrative text range from 600 to 1,000 tokens. Common dimensions include relevance and robustness [01_rag.md:1-8].",guide_chunking.pdf:1;01_rag.md:1-8,1.0,acc=1.0
+Q05,What is the purpose of citations in research assistants?,baseline,0,,"The primary purpose of citations in research is to:
+
+1. Give credit to the original authors and sources of information.
+2. Allow readers to locate the original sources of data, ideas, or quotes used in the research.
+3. Enable others to verify the accuracy and validity of the research findings.
+
+As a research assistant, I use citations to maintain academic integrity and provide transparency about the sources of my work.",,0.0,acc=0.0
+Q05,What is the purpose of citations in research assistants?,react,4,04_ai_evals.md,"When answering questions, cite the specific sentence(s) that support your claim. Avoid adding extra facts not present in this document.",,0.0,acc=0.0
+Q06,"In a RAG pipeline, what does reranking do?",baseline,0,,"I'm not familiar with the specific details of RAG pipelines or reranking in this context. I can try to provide general information, but I may not have the most accurate or up-to-date knowledge on this topic. Can you please provide more context or clarify what you mean by ""reranking"" in a RAG pipeline?",,0.0,acc=0.0
+Q06,"In a RAG pipeline, what does reranking do?",react,4,01_rag.md,"According to [01_rag.md], ""A reranker can improve precision by reordering retrieved chunks."", which supports the claim that reranking is used to refine the output of the RAG pipeline and improve its accuracy.",01_rag.md,1.0,acc=1.0
+Q07,Define variance analysis in simple terms.,baseline,0,,"Variance analysis is a method used to compare actual costs or results with expected costs or results by analyzing the differences between them. It helps identify areas where costs are higher or lower than expected, and provides insights into why these variations occurred.",,0.0,acc=1.0
+Q07,Define variance analysis in simple terms.,react,4,01_finance_variance.md,"Variance analysis is the difference between actual results and a benchmark such as budget or forecast. Drivers are the largest contributors to variance, often volume, price, mix, or cost.
+
+Faithfulness means the answer is supported by retrieved evidence [01_finance_variance.md:1].",01_finance_variance.md:1,1.0,acc=1.0
+Q08,Give two examples of variance drivers.,baseline,0,,"Two common variance drivers are:
+
+1. **Price**: Changes in prices can significantly impact sales and revenue, leading to fluctuations in variance.
+2. **Inventory levels**: Variance in inventory levels can be driven by factors such as demand, supply chain disruptions, or changes in production capacity, affecting costs and profitability.",,0.0,acc=1.0
+Q08,Give two examples of variance drivers.,react,2,,"Based on the retrieved evidence, two examples of variance drivers are:
+
+* Volume (as mentioned in 01_finance_variance.md)
+* Price (as implied by the reference to benchmarking and budget/forecast in 01_finance_variance.md)
+
+Faithfulness means the answer is supported by retrieved evidence [01_finance_variance.md:1].",01_finance_variance.md:1,1.0,acc=1.0
+Q09,What are three common evaluation dimensions for LLM outputs?,baseline,0,,"Three common evaluation dimensions for Large Language Model (LLM) outputs are:
+
+1. Fluency: How well does the output read and sound natural?
+2. Coherence: Does the output make sense and follow a logical flow of ideas?
+3. Accuracy: How accurate is the output in terms of factual information, grammar, and syntax?",,0.0,acc=0.0
+Q09,What are three common evaluation dimensions for LLM outputs?,react,4,22_ai_evals.md,"Based on the retrieved evidence, three common evaluation dimensions for LLM outputs are:
+
+1. Relevance
+2. Faithfulness (groundedness)
+3. Robustness
+
+These dimensions are mentioned in the context of separating retrieval quality from generation quality, and are supported by the retrieved evidence. 
+
+Evaluation should separate retrieval quality from generation quality [22_ai_evals.md:1-16].",22_ai_evals.md:1-16,1.0,acc=1.0
+Q10,What is a regression suite in LLM evaluation?,baseline,0,,"I'm not familiar with the specific term ""regression suite"" in the context of Large Language Model (LLM) evaluation. However, I can tell you that there are various suites used to evaluate LLMs, such as:
+
+1. GLUE: A benchmarking suite for natural language processing tasks.
+2. SuperGLUE: An extension of GLUE with more tasks and larger datasets.
+3. SQuAD: A reading comprehension task evaluation suite.
+
+If ""regression suite"" is a specific term used in the LLM evaluation community, I'm not aware of it.",,0.0,acc=0.0
+Q10,What is a regression suite in LLM evaluation?,react,4,01_ai_evals.md,"A regression suite in LLM evaluation refers to a set of tests designed to assess the performance of a large language model (LLM) on tasks that involve predicting continuous values or regression problems.
+
+Evaluation should separate retrieval quality from generation quality [01_ai_evals.md:1-8].",01_ai_evals.md:1-8,1.0,acc=1.0
+Q11,What is the key idea behind embeddings in vector search?,baseline,0,,"The key idea behind embeddings in vector search is that high-dimensional vectors can be reduced to lower-dimensional representations (embeddings) while preserving their semantic meaning and similarity relationships. This allows for efficient and effective similarity searches, such as nearest neighbor or top-k retrieval, in high-dimensional spaces.",,0.0,acc=0.0
+Q11,What is the key idea behind embeddings in vector search?,react,4,02_vector_search.md,"Embeddings map text to vectors so semantically similar items are close in vector space. Approximate nearest neighbor (ANN) methods trade a small accuracy loss for speed.
+
+Faithfulness means the answer is supported by retrieved evidence [02_vector_search.md:1].",02_vector_search.md:1,1.0,acc=1.0
+Q12,What trade-off do ANN methods make?,baseline,0,,"Artificial Neural Networks (ANNs) often make the following trade-offs:
+
+1. **Interpretability**: ANNs can be difficult to interpret, making it challenging to understand why a particular prediction was made.
+2. **Computational resources**: Training and running ANNs can require significant computational power and memory.
+3. **Data requirements**: ANNs typically require large amounts of data to train effectively, which can be time-consuming and expensive to collect.
+4. **Overfitting**: ANNs are prone to overfitting, especially when the training dataset is small or noisy.
+
+These trade-offs highlight the need for careful model selection, hyperparameter tuning, and evaluation to ensure that ANNs perform well while minimizing these drawbacks.",,0.0,acc=0.0
+Q12,What trade-off do ANN methods make?,react,3,01_vector_search.md,Faithfulness means the answer is supported by retrieved evidence [01_vector_search.md]. Approximate nearest neighbor (ANN) methods trade a small accuracy loss for speed.,01_vector_search.md,1.0,acc=1.0
+Q13,List two stages in a RAG pipeline.,baseline,0,,"In a Risk Assessment and Gap (RAG) pipeline, two common stages are:
+
+1. Identify: This stage involves identifying the risks associated with a project or process.
+2. Prioritise: In this stage, the identified risks are prioritised based on their likelihood and impact to determine which ones require further attention or mitigation.",,0.0,acc=0.0
+Q13,List two stages in a RAG pipeline.,react,2,,The RAG pipeline includes two stages: ingestion and synthesis. Faithfulness means the answer is supported by retrieved evidence [01_ai_evals.md:1-8].,01_ai_evals.md:1-8,0.0,acc=1.0
+Q14,What is Scope 2 in carbon accounting?,baseline,0,,"In carbon accounting, Scope 1 refers to direct emissions from an organization's operations, such as electricity and heat used on-site.
+
+Scope 2 refers to indirect emissions associated with the production of electricity or heat purchased by an organization. This includes the emissions generated by the power plants that generate the electricity or heat being consumed.",,0.0,acc=1.0
+Q14,What is Scope 2 in carbon accounting?,react,4,01_climate.md,"According to the sample corpus, Scope 2 in carbon accounting covers purchased energy. Faithfulness means the answer is supported by retrieved evidence [01_climate.md:1]. Common dimensions include relevance and robustness [01_climate.md:1-8].",01_climate.md:1;01_climate.md:1-8,1.0,acc=1.0
+Q15,Why is data minimization helpful?,baseline,0,,"Data minimization is helpful because it reduces the amount of personal data collected and stored, which can help protect individuals' privacy and prevent data breaches. By collecting only the necessary data for a specific purpose, organizations minimize the risk of unauthorized access or misuse of sensitive information. This approach also helps to reduce the administrative burden on individuals and organizations, as well as the costs associated with data storage and processing.",,0.0,acc=1.0
+Q15,Why is data minimization helpful?,react,4,01_health_data.md,"Data minimization is helpful because it reduces exposure and the risk of re-identification, as stated in the document. By removing direct identifiers, data minimization makes it more difficult for individuals to be linked to their health information. This approach also ensures that access to sensitive data is role-based and audited, which adds an extra layer of security [01_health_data.md:1].",01_health_data.md:1,1.0,acc=1.0
+Q16,What is least privilege and why does it matter?,baseline,0,,"Least Privilege is a security principle that states users or systems should be granted only the minimum level of access necessary to perform their tasks. This means that users should not have more privileges than they need.
+
+It matters because excessive privileges can lead to:
+
+1. Unauthorized data access and modification
+2. System compromise and exploitation by malicious actors
+3. Increased risk of data breaches and security incidents
+
+By limiting privileges, organizations can reduce the attack surface, minimize damage in case of a breach, and improve overall security posture.",,0.0,acc=1.0
+Q16,What is least privilege and why does it matter?,react,3,01_webapp_security.md,"Least privilege refers to the practice of granting users only the minimum level of access and privileges necessary to perform their tasks. This approach helps to reduce the risk of security breaches and unauthorized access to sensitive information.
+
+As Faithfulness means the answer is supported by retrieved evidence [01_ai_evals.md:1-8], it is essential to implement least privilege in various aspects of system design, including web applications, data storage, and network security. By doing so, organizations can minimize the damage caused by a security breach or unauthorized access.
+
+In addition, common dimensions include relevance and robustness [01_ai_evals.md:1-8]. This means that least privilege should be evaluated based on its impact on these two critical aspects of system design.",01_ai_evals.md:1-8;01_ai_evals.md:1-8,0.0,acc=1.0
+Q17,What is a North Star metric?,baseline,0,,"A North Star metric is a key performance indicator (KPI) that serves as the company's guiding direction and purpose. It is a single, overarching metric that defines what success means for an organization, and all other metrics are measured in relation to it.
+
+The term ""North Star"" comes from navigation, where the North Star is used to determine direction and course correction. Similarly, a North Star metric provides a clear sense of direction and purpose for an organization, helping to guide decision-making and resource allocation.
+
+A well-defined North Star metric should be:
+
+1. Clear and concise
+2. Measurable
+3. Relevant to the organization's mission and goals
+4. Aligns with the company's values
+
+Having a North Star metric can help organizations stay focused, motivated, and aligned towards their long-term objectives.",,0.0,acc=1.0
+Q17,What is a North Star metric?,react,4,01_product_metrics.md,North Star metrics measure the core value delivered to users [01_product_metrics.md:1]. Guardrail metrics prevent optimizing the North Star at the expense of user experience [01_product_metrics.md:2]. A/B tests require clear hypotheses and pre-defined success criteria [01_product_metrics.md:3].,01_product_metrics.md:1;01_product_metrics.md:2;01_product_metrics.md:3,1.0,acc=1.0
+Q18,Why do teams use runbooks during incidents?,baseline,0,,"Teams use runbooks during incidents to provide a structured and repeatable process for resolving issues. Runbooks document the steps required to troubleshoot and resolve common problems, allowing team members to quickly follow established procedures and minimize downtime. This helps ensure consistency, efficiency, and accuracy in incident resolution, ultimately reducing the impact of the incident on the organization.",,0.0,acc=0.0
+Q18,Why do teams use runbooks during incidents?,react,4,01_ops_incidents.md,"Teams use runbooks during incidents to ensure consistency and efficiency in the response process. As stated in the document ""Incident Response in Operations"" [01_ops_incidents.md:1-8], an incident timeline captures detection, mitigation, and resolution events, and post-incident reviews focus on systemic fixes rather than blame.
+
+Runbooks reduce mean time to recovery by standardizing actions.",01_ops_incidents.md:1-8,1.0,acc=1.0
+Q19,What is a key warning about retrieved text in RAG systems?,baseline,0,,"I'm not aware of specific details regarding retrieved text in RAG (Relevance-Based Access Governance) systems. However, I can suggest that the key warning might be related to information overload or noise in the retrieved results, which could impact the accuracy and effectiveness of the system. If you have more context or clarify what you're referring to, I'd be happy to try and help further.",,0.0,acc=1.0
+Q19,What is a key warning about retrieved text in RAG systems?,react,4,01_rag.md,"Faithfulness means the answer is supported by retrieved evidence [01_rag.md]. 
+
+A key warning about retrieved text in RAG systems is that citations improve user trust and enable verification of claims. 
+A reranker can improve precision by reordering retrieved chunks.",01_rag.md,0.0,acc=1.0
+Q20,"When evidence is insufficient, what should the assistant do?",baseline,0,,"When evidence is insufficient, I would recommend that the assistant:
+
+1. Clearly document the limitations of the available data.
+2. Consider alternative explanations or hypotheses.
+3. Suggest additional research or data collection to strengthen the investigation.
+4. Report the findings in a transparent and honest manner, acknowledging the limitations.
+
+If unsure about how to proceed, it's always best to consult with a supervisor or expert in the field for guidance.",,0.0,acc=1.0
+Q20,"When evidence is insufficient, what should the assistant do?",react,4,08_finance_variance.md,"When evidence is insufficient, the assistant should ask a clarifying question. According to the text: ""When answering questions, cite the specific sentence(s) that support your claim. Avoid adding extra facts not present in this document."" [08_finance_variance.md].",08_finance_variance.md,0.0,acc=1.0

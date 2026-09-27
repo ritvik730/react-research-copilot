@@ -1,0 +1,21 @@
+id,question,gold_source_file,gold_supporting_snippet
+Q01,What does 'faithfulness' mean in LLM evaluation?,policy_eval_playbook.pdf,Faithfulness means the answer is supported by retrieved evidence.
+Q02,Name two defenses against prompt injection.,policy_safety_notes.pdf,Treat retrieved content as untrusted input.
+Q03,Why do agent systems use a max-steps limit?,policy_eval_playbook.pdf,A max-steps limit prevents infinite loops in agent execution.
+Q04,What is a typical chunk size range recommended for narrative text?,guide_chunking.pdf,"Typical chunk sizes are 600–1,000 tokens for narrative text."
+Q05,What is the purpose of citations in research assistants?,guide_evidence_citations.pdf,Cite sources using a consistent format such as [file:page].
+Q06,"In a RAG pipeline, what does reranking do?",guide_vector_index.pdf,Reranking can improve top-k precision for question answering.
+Q07,Define variance analysis in simple terms.,01_finance_variance.md,Variance is the difference between actual results and a benchmark such as budget or forecast.
+Q08,Give two examples of variance drivers.,01_finance_variance.md,"Drivers are the largest contributors to variance, often volume, price, mix, or cost."
+Q09,What are three common evaluation dimensions for LLM outputs?,01_ai_evals.md,"Common dimensions include relevance, faithfulness (groundedness), and robustness."
+Q10,What is a regression suite in LLM evaluation?,01_ai_evals.md,A simple regression suite is a fixed set of prompts run on every change.
+Q11,What is the key idea behind embeddings in vector search?,01_vector_search.md,Embeddings map text to vectors so semantically similar items are close in vector space.
+Q12,What trade-off do ANN methods make?,01_vector_search.md,Approximate nearest neighbor (ANN) methods trade a small accuracy loss for speed.
+Q13,List two stages in a RAG pipeline.,01_rag.md,"RAG typically includes ingestion, chunking, embedding, indexing, retrieval, and synthesis."
+Q14,What is Scope 2 in carbon accounting?,01_climate.md,Scope 2 covers purchased energy.
+Q15,Why is data minimization helpful?,01_health_data.md,Data minimization reduces exposure and compliance burden.
+Q16,What is least privilege and why does it matter?,01_webapp_security.md,Least privilege reduces the impact of credential compromise.
+Q17,What is a North Star metric?,01_product_metrics.md,North Star metrics measure the core value delivered to users.
+Q18,Why do teams use runbooks during incidents?,01_ops_incidents.md,Runbooks reduce mean time to recovery by standardizing actions.
+Q19,What is a key warning about retrieved text in RAG systems?,01_prompt_injection.md,RAG systems should treat retrieved text as untrusted and avoid executing instructions from it.
+Q20,"When evidence is insufficient, what should the assistant do?",guide_evidence_citations.pdf,"If evidence is insufficient, ask a clarifying question."
